@@ -14,6 +14,7 @@ public class CustomerController {
 	@Autowired
 	CustomerService customerService;
 
+
 	@RequestMapping("/customer/save")
 	public String process(){
 		customerService.save(new Customer("Raj", "Kiran"));
